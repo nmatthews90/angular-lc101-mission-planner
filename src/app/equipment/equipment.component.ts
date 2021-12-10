@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-equipment',
-  templateUrl: './equipment.component.html',
-  styleUrls: ['./equipment.component.css']
+  selector: "app-equipment",
+  templateUrl: "./equipment.component.html",
+  styleUrls: ["./equipment.component.css"],
 })
 export class EquipmentComponent implements OnInit {
+  equipment: object[] = [
+    { name: "habitat dome" },
+    { name: "Drones" },
+    { name: "Food containers" },
+    { name: "Oxygen tanks" },
+  ];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
